@@ -2,10 +2,8 @@
 	<div id="title@Projects">
 
 		
-			
-
-<p><br>
-<h1 id="howtousemustread">How to use (MUST READ)</h1></p>
+			<!-- <br>
+<h1 id="howtousemustread">How to use (MUST READ)</h1>
 
 <p>This is not the usual Hugo theme you can download and start
 adding contents right away. But don't get scared, you won't need to read
@@ -14,8 +12,8 @@ something very customized, you just need to read the basics.
 Making the theme a SPA comes with some essential features
 you need to know before starting to build your website.</p>
 
-<p><br>
-<h2 id="prerequisites">Prerequisites</h2></p>
+<br>
+<h2 id="prerequisites">Prerequisites</h2>
 
 <p>The only thing you need in order to use this theme is Hugo.
 If you still don't have it, you can find a complete installation guide
@@ -25,8 +23,8 @@ If you still don't have it, you can find a complete installation guide
 superior to 0.43. If you have any trouble with your Hugo version using this
 theme, I invite you to open an issue on Github so I can help you.</p>
 
-<p><br>
-<h2 id="installation">Installation</h2></p>
+<br>
+<h2 id="installation">Installation</h2>
 
 <p>You can find the Hugo's theme installation guide
 <a href="https://gohugo.io/themes/installing-and-using-themes/">here</a>. But those
@@ -66,8 +64,8 @@ open a terminal in the root folder of your site and use:</p>
 your web browser. This is the local server that will be hosting
 your website, as long as you keep that terminal opened.</p>
 
-<p><br>
-<h2 id="contents">Contents</h2></p>
+<br>
+<h2 id="contents">Contents</h2>
 
 <p>Adding content to your site is very straightforward, just putting your `.md` files into
 the `content` folder will do (keep reading).</p>
@@ -121,8 +119,8 @@ URL (depending on the characters you use).</p>
 files alphabetically with the order you want (letters better than
 numbers), then setting the title inside the Markdown as explained before.</p>
 
-<p><br>
-<h2 id="configuration">Configuration</h2></p>
+<br>
+<h2 id="configuration">Configuration</h2>
 
 <p>To be able to configure your own website parameters (such as the website title),
 you need to have your own <code>config.toml</code> (or the Hugo supported language
@@ -141,16 +139,15 @@ title = "My website's title"
     description = "This is my website"
 </code></pre>
 
-<p><br>
-<h2 id="socialmedia">Social media</h2></p>
+<br>
+<h2 id="socialmedia">Social media</h2>
 
 <p>Modifying the social media icons is quite simple, the moment you add your own, the
 theme default social media will disappear. Here you can see a list of supported icons:</p>
 
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-
-<h1 id="p-img-src-https-raw-githubusercontent-com-saggamedeveloper-hugo-minimalist-spa-master-images-available-icons-png-alt-alt-text-title-available-icons-p"><p><img src="https://raw.githubusercontent.com/SAGGameDeveloper/hugo-minimalist-spa/master/images/available_icons.png" alt="alt text" title="Available icons" /></p></h1>
-
+<<<<<<< HEAD
+<p><img src="https://raw.githubusercontent.com/SAGGameDeveloper/hugo-minimalist-spa/master/images/available_icons.png" alt="alt text" title="Available icons" /></p>
+=======
 <p><img src="https://raw.githubusercontent.com/SAGGameDeveloper/hugo-minimalist-spa/master/available_icons.png" alt="Available icons" title="Available icons" /></p>
 >>>>>>> 00862df4207f7f3b54a48f1d36ef94a73bee6a10
 
@@ -194,15 +191,15 @@ as this (in <code>toml</code>):</p>
 right after it. Declaration order does not matter, you can place the elements as you wish in
 the document.</p>
 
-<p><br>
-<h2 id="customimports">Custom imports</h2></p>
+<br>
+<h2 id="customimports">Custom imports</h2>
 
 <p>You can import your own files adding one layout to your page. To do so, create a file
 named <code>custom_imports.html</code> and put it inside the <code>layouts/partials/</code> folder (create it
 if you don't have one) of your website.</p>
 
-<p><br>
-<h2 id="styling">Styling</h2></p>
+<br>
+<h2 id="styling">Styling</h2>
 
 <p>Hugo minimalist SPA allows you to customize many aspects of its appearance.</p>
 
@@ -280,22 +277,22 @@ if you want to customize the SASS, the simplest option is to modify the theme's 
 I would recommend in normal situations at all, but due to Hugo limitations there's no better way to do
 it without getting too deep.</p>
 
-<p><br>
-<h1 id="advancedmodifications">Advanced modifications</h1></p>
+<br>
+<h1 id="advancedmodifications">Advanced modifications</h1>
 
 <p>You can modify the core source of the theme directly if you want, here you will find some important
 aspects to take into account if you do so.</p>
 
-<p><br>
-<h2 id="javascriptspacore">JavaScript SPA core</h2></p>
+<br>
+<h2 id="javascriptspacore">JavaScript SPA core</h2>
 
 <p>The single page application core of this theme is made using JavaScript and JQuery (only for the AJAX requests).
 If you want to modify it, you can find the code on <code>static/js</code>. There are other ways of achieving the same result
 without JavaScript using Hugo's pipelines. I didn't find them very pleasant, but if you do,
 you can create your own SPA implementation and delete the JavaScript source.</p>
 
-<p><br>
-<h2 id="layouts">Layouts</h2></p>
+<br>
+<h2 id="layouts">Layouts</h2>
 
 <p>The layouts in this theme are not only used to build the final HTML's, but they also set the id's of
 some elements using Hugo functions. Those id's are later used by the JavaScript code to make the AJAX
@@ -306,12 +303,12 @@ code is able to find the files to be loaded without using external configuration
 They use the filename and custom title (if there's any) to inject the proper id's into the final HTML. Those id's are then
 used by the client side JavaScript to request the correct files from the <code>content</code> folder.</p>
 
-<p><p>Due to Hugo limitations, the custom titles cannot be directly injected into the navigation bar for their use.
+<p>Due to Hugo limitations, the custom titles cannot be directly injected into the navigation bar for their use.
 To skip this problem, I use a temporal <code>&lt;div&gt;</code> whose id is the custom title. This <code>&lt;div&gt;</code> is set in the <code>single.html</code> layout,
-which has direct access to the <code>.Title</code> through Hugo. The JavaScript router then takes the id (if it&rsquo;s not empty, which means
+which has direct access to the <code>.Title</code> through Hugo. The JavaScript router then takes the id (if it's not empty, which means
 a custom title has been set), and uses it to set the navigation bar proper names. After that it extracts the inner HTML of
 the temporal <code>&lt;div&gt;</code>, created by the single layout, to finally get disposed of it.</p>
-<br></p>
+<br> -->
 
 		
 	
