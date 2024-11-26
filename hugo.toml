@@ -1,0 +1,46 @@
+baseURL = "https://setegonz.github.io/"
+languageCode = "en-us"
+title = "Steven González Lugo"
+theme = "PaperMod"
+
+[params]
+    defaultTheme = "auto"
+    ShowReadingTime = true
+    ShowShareButtons = false
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    socialIcons = [
+        { name = "email", url = "mailto:sete.gonz@gmail.com" },
+        { name = "linkedin", url = "https://www.linkedin.com/in/sgonzalezlugo" }
+    ]
+
+[params.profileMode]
+    enabled = true
+    title = "Steven González Lugo"
+    subtitle = """Data Scientist with Cognitive Neuroscience Background
+    
+    🚧 Site under construction - More content coming soon! 🚧"""
+    imageUrl = ""
+    imageTitle = "my image"
+    imageWidth = 120
+    imageHeight = 120
+    buttons = [
+        { name = "Posts", url = "/posts/" },
+        { name = "About", url = "/about/" }
+    ]
+    socialIcons = [
+        { name = "email", url = "mailto:sete.gonz@gmail.com" },
+        { name = "linkedin", url = "https://www.linkedin.com/in/sgonzalezlugo" }
+    ]
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
